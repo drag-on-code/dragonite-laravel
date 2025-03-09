@@ -10,16 +10,14 @@
     "extra": {
         "laravel": {
             "providers": [],
-            "aliases": {
-
-            }
+            "aliases": {}
         }
     },
     "autoload": {
         "psr-4": {
             "Dragonite\\Accessibility\\": "/",
-            "Dragonite\\Accessibility\\Database\\Factories\\": "database/factories/",
-            "Dragonite\\Accessibility\\Database\\Seeders\\": "database/seeders/"
+            "Dragonite\\Accessibility\\Factories\\": "Factories/",
+            "Dragonite\\Accessibility\\Seeders\\": "Seeders/"
         }
     },
     "autoload-dev": {

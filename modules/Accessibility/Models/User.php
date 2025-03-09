@@ -6,6 +6,7 @@ namespace Dragonite\Accessibility\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Str;
 use Laravel\Passport\HasApiTokens;
 
 class User extends Authenticatable
@@ -33,6 +34,13 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    public static function booted()
+    {
+        static::creating(function ($model) {
+            $model->id = Str::orderedUuid();
+        });
+    }
 
     /**
      * Get the attributes that should be cast.

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -20,6 +21,8 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        $this->createSuperUser();
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();
@@ -45,5 +48,14 @@ return new class extends Migration
         Schema::dropIfExists('users');
         Schema::dropIfExists('password_reset_tokens');
         Schema::dropIfExists('sessions');
+    }
+
+    private function createSuperUser(): void
+    {
+        User::create([
+            'name' => 'Super User',
+            'email' => 'root@dragonite.id',
+            'password' => bcrypt('dev-root'),
+        ]);
     }
 };
