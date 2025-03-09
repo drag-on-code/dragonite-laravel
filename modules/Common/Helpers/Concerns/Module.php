@@ -1,6 +1,6 @@
 <?php
 
-namespace Dragonite\Common\Helpers\Traits;
+namespace Dragonite\Common\Helpers\Concerns;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Cache;
