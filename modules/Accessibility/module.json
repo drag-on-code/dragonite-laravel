@@ -1,0 +1,11 @@
+{
+    "name": "Accessibility",
+    "alias": "accessibility",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Dragonite\\Accessibility\\Providers\\AccessibilityServiceProvider"
+    ],
+    "files": []
+}

@@ -1,0 +1,30 @@
+{
+    "name": "vheins/accessibility",
+    "description": "",
+    "authors": [
+        {
+            "name": "Muhammad Rheza Alfin",
+            "email": "m.rheza.alfin@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Dragonite\\Accessibility\\": "/",
+            "Dragonite\\Accessibility\\Database\\Factories\\": "database/factories/",
+            "Dragonite\\Accessibility\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dragonite\\Accessibility\\Tests\\": "tests/"
+        }
+    }
+}
