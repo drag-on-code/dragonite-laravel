@@ -1,0 +1,11 @@
+{
+    "name": "Common",
+    "alias": "common",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Dragonite\\Common\\Providers\\CommonServiceProvider"
+    ],
+    "files": []
+}

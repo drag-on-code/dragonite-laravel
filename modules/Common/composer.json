@@ -1,0 +1,30 @@
+{
+    "name": "vheins/common",
+    "description": "",
+    "authors": [
+        {
+            "name": "Muhammad Rheza Alfin",
+            "email": "m.rheza.alfin@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Dragonite\\Common\\": "/",
+            "Dragonite\\Common\\Database\\Factories\\": "database/factories/",
+            "Dragonite\\Common\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dragonite\\Common\\Tests\\": "tests/"
+        }
+    }
+}
