@@ -28,10 +28,10 @@ return [
         'path' => base_path('stubs/modules'),
         'files' => [
             // 'routes/web' => 'routes/web.php',
-            'routes/api' => 'routes/api.php',
+            'routes/api' => 'api.php',
             // 'views/index' => 'resources/views/index.blade.php',
             // 'views/master' => 'resources/views/layouts/master.blade.php',
-            'scaffold/config' => 'config/config.php',
+            'scaffold/config' => 'config.php',
             'composer' => 'composer.json',
             // 'assets/js/app' => 'resources/assets/js/app.js',
             // 'assets/sass/app' => 'resources/assets/sass/app.scss',
@@ -85,7 +85,7 @@ return [
         | This path will also be added automatically to the list of scanned folders.
         |
         */
-        'modules' => base_path('Modules'),
+        'modules' => base_path('modules'),
 
         /*
         |--------------------------------------------------------------------------
@@ -138,20 +138,20 @@ return [
             'enums' => ['path' => 'Enums', 'generate' => false],
             'exceptions' => ['path' => 'Exceptions', 'generate' => false],
             'jobs' => ['path' => 'Jobs', 'generate' => false],
-            'helpers' => ['path' => 'Helpers', 'generate' => false],
+            'helpers' => ['path' => 'Helpers', 'generate' => true],
             'interfaces' => ['path' => 'Interfaces', 'generate' => false],
             'listener' => ['path' => 'Listeners', 'generate' => false],
-            'model' => ['path' => 'Models', 'generate' => false],
+            'model' => ['path' => 'Models', 'generate' => true],
             'notifications' => ['path' => 'Notifications', 'generate' => false],
             'observer' => ['path' => 'Observers', 'generate' => false],
             'policies' => ['path' => 'Policies', 'generate' => false],
             'provider' => ['path' => 'Providers', 'generate' => true],
             'repository' => ['path' => 'Repositories', 'generate' => false],
-            'resource' => ['path' => 'Transformers', 'generate' => false],
+            'resource' => ['path' => 'Resources', 'generate' => true],
             'route-provider' => ['path' => 'Providers', 'generate' => true],
             'rules' => ['path' => 'Rules', 'generate' => false],
-            'services' => ['path' => 'Services', 'generate' => false],
-            'scopes' => ['path' => 'Models/Scopes', 'generate' => false],
+            'services' => ['path' => 'Services', 'generate' => true],
+            'scopes' => ['path' => 'Models/Scopes', 'generate' => true],
             'traits' => ['path' => 'Traits', 'generate' => true],
 
             // app/Http/
@@ -160,7 +160,7 @@ return [
             'request' => ['path' => 'Requests', 'generate' => true],
 
             // config/
-            'config' => ['path' => 'config', 'generate' => true],
+            'config' => ['path' => 'config', 'generate' => false],
 
             // database/
             'factory' => ['path' => 'Factories', 'generate' => true],
@@ -180,7 +180,7 @@ return [
             'vue-state' => ['path' => 'Vue/state', 'generate' => true],
 
             // routes/
-            'routes' => ['path' => 'routes', 'generate' => true],
+            'routes' => ['path' => 'routes', 'generate' => false],
 
             // tests/
             'test-feature' => ['path' => 'tests/Feature', 'generate' => true],
