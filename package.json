@@ -10,5 +10,8 @@
         "concurrently": "^9.0.1",
         "laravel-vite-plugin": "^1.2.0",
         "vite": "^6.2.1"
+    },
+    "dependencies": {
+        "uikit": "^3.23.2"
     }
 }
